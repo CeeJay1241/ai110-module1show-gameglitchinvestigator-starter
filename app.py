@@ -48,10 +48,10 @@ def check_guess(guess, secret):
         return "Too Low", "📈 Go HIGHER!"
 
 
-"""- Redesign scoring system: 100 points max, deduct per wrong attempt (not total)
-  - Win on attempt 1: 100 points
-  - Win on attempt N: 100 - (N-1) × (100/attempt_limit) points
-  - No win: 0 points"""
+#- Redesign scoring system: 100 points max, deduct per wrong attempt (not total)
+#  - Win on attempt 1: 100 points
+# - Win on attempt N: 100 - (N-1) × (100/attempt_limit) points
+# - No win: 0 points"""
 def update_score(current_score: int, outcome: str, attempt_number: int, attempt_limit: int):
     # Cost per wrong attempt: 100 / attempt_limit
     cost_per_wrong_attempt = 100 / attempt_limit
